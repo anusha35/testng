@@ -3,7 +3,22 @@
   <groupId>Maven_testng</groupId>
   <artifactId>Maventestng</artifactId>
   <version>0.0.1-SNAPSHOT</version>
- <profiles>
+
+  <dependencies>
+<dependency>
+	<groupId>org.seleniumhq.selenium</groupId>
+	<artifactId>selenium-java</artifactId>
+	<version>2.47.2</version>
+</dependency>
+
+
+<dependency>
+	<groupId>org.testng</groupId>
+	<artifactId>testng</artifactId>
+	<version>6.9.6</version>
+</dependency>
+   </dependencies>
+    <profiles>
 <profile>
   <id>smoke</id>
   <activation>
@@ -20,18 +35,4 @@
   </build>
 </profile>
 </profiles>
-  <dependencies>
-<dependency>
-	<groupId>org.seleniumhq.selenium</groupId>
-	<artifactId>selenium-java</artifactId>
-	<version>2.47.2</version>
-</dependency>
-
-
-<dependency>
-	<groupId>org.testng</groupId>
-	<artifactId>testng</artifactId>
-	<version>6.9.6</version>
-</dependency>
-   </dependencies>
 </project>
